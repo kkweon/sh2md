@@ -6,7 +6,7 @@
 Module      : RecordShellToMarkdown
 Description : Create an interactive shell and record the inputs & outputs. When an user interrupts, print the result in markdown format
 Copyright   : (c) Mo Kweon
-License     : MIT
+License     : BSD3
 Maintainer  : kkweon@gmail.com
 Stability   : experimental
 Portability : POSIX
