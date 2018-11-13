@@ -1,6 +1,9 @@
 module Main where
 
-import Lib
+import RecordShellToMarkdown (startShell)
+import RecordShellToMarkdown.CLI (runCLIParser)
 
 main :: IO ()
-main = someFunc
+main = do
+  parserInfo <- runCLIParser
+  startShell parserInfo

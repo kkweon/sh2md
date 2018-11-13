@@ -1,3 +1,5 @@
 .stack-work/
 record-shell-to-markdown.cabal
 *~
+tags
+sh2md.cabal

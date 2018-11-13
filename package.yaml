@@ -1,6 +1,6 @@
-name:                record-shell-to-markdown
+name:                sh2md
 version:             0.1.0.0
-github:              "kkweon/record-shell-to-markdown"
+github:              "kkweon/sh2md"
 license:             BSD3
 author:              "Mo Kweon"
 maintainer:          "kkweon@gmail.com"
@@ -11,38 +11,48 @@ extra-source-files:
 - ChangeLog.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+synopsis:            Record your shell session and print in the markdown format
+category:            Utilities
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/kkweon/record-shell-to-markdown#readme>
+description:         Please see the README on GitHub at <https://github.com/kkweon/sh2md#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- transformers
+- text
+- process
+- unix
+- containers
+- Hclip
+- optparse-applicative
 
 library:
   source-dirs: src
 
 executables:
-  record-shell-to-markdown-exe:
+  sh2md:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
+    - -Wall
     - -threaded
+    - -O3
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - record-shell-to-markdown
+    - sh2md
 
 tests:
-  record-shell-to-markdown-test:
+  sh2md-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
+    - -Wall
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - record-shell-to-markdown
+    - sh2md
