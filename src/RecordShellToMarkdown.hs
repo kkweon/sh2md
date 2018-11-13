@@ -23,7 +23,6 @@ module RecordShellToMarkdown
   ( startShell
   , runShellCommand
   , runCommand
-  , module CLI
   ) where
 
 import Control.Concurrent.MVar (MVar, modifyMVar_, newMVar, readMVar)
