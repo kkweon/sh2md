@@ -1,5 +1,8 @@
 # sh2md
 
+[![Build Status](https://travis-ci.com/kkweon/sh2md.svg?branch=master)](https://travis-ci.com/kkweon/sh2md)
+[![Hackage](https://img.shields.io/hackage/v/sh2md.svg?style=flat-square)](http://hackage.haskell.org/package/sh2md)
+
 Record your shell and print in the markdown format
 
 <div align="center">

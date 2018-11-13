@@ -13,7 +13,6 @@ joinSequence :: Seq T.Text -> T.Text
 joinSequence = Seq.foldrWithIndex folder ""
   where
     folder :: Int -> T.Text -> T.Text -> T.Text
-    folder _ value accumulator =
-      if T.null value
-        then accumulator
-        else value <> "\n" <> accumulator
+    folder _ "" accumulator = accumulator
+    folder _ value "" = value
+    folder _ value accumulator = value <> "\n" <> accumulator
