@@ -32,3 +32,9 @@ You need a [stack](https://www.haskellstack.org/)
 stack build
 stack install
 ```
+
+### nix
+
+```
+nix-build # will generate ./result/bin/sh2md
+```
